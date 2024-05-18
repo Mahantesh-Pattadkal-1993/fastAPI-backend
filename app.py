@@ -10,8 +10,15 @@ app = FastAPI()  # Create a FastAPI instance
 # Include the router in your app
 app.include_router(router=GETrouter)  # Include the router in the app
 
+""" 
+Run this part if you are not running the app from container
+
+
 # Run the Uvicorn server
 if __name__ == "__main__":  # Check if the script is being run directly
     uvicorn.run("app:app", host="0.0.0.0", port=8080, reload=True)  # Run Uvicorn with the app instance on port 8080
 
+"""
+
 # Runs on this link: http://127.0.0.1:8080/
+
